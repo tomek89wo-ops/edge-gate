@@ -2,13 +2,13 @@
 
 **Five tests every candidate trading edge has to survive before anyone writes code.**
 
-This does not find edges. It kills them. Over one research campaign it took
-roughly **620 candidate hypotheses and passed one** — and that one was later
-withdrawn from the account, because a further test showed its return was
-market beta with no significant alpha. So the honest score is 620 tested,
-zero deployed. That ratio is the point: the expensive mistake in systematic
-trading is not missing an edge, it is putting capital behind one that was
-never there.
+This does not find edges. It kills them. In **60 runs of pure noise** — two
+independent random series, no relationship whatsoever — the naive reading
+calls **41 of them significant**, and the overlapping-windows artefact
+survives in **29**. Reproduce both numbers yourself with
+`python examples/noise_sweep.py`. That is the point: the expensive mistake in
+systematic trading is not missing an edge, it is putting capital behind one
+that was never there.
 
 ```
 python examples/demo.py

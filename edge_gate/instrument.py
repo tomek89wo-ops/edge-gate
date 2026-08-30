@@ -50,13 +50,13 @@ Two rules that are not functions, because code cannot enforce them:
     markets differ. If half your legs point one way and half the other, you
     have found noise with a story attached.
 
-A NOTE ON WHAT THIS IS NOT. This does not find edges. It kills them. In one
-research campaign it took roughly 620 candidate hypotheses and passed one -
-and that one was later withdrawn from the account, because a further test
-showed its return was market beta carrying no significant alpha. Tested 620,
-deployed none. That ratio is the point: the expensive mistake in systematic
-trading is not missing an edge, it is deploying capital on one that was
-never there. The gate is worth most when it is turned on its own output.
+A NOTE ON WHAT THIS IS NOT. This does not find edges. It kills them. In 60
+runs of pure noise the naive reading calls 41 significant and the
+overlapping-windows artefact survives in 29 - run examples/noise_sweep.py and
+watch it happen. That is the point: the expensive mistake in systematic
+trading is not missing an edge, it is deploying capital on one that was never
+there. Every claim in this file is one you can reproduce from this repository;
+anything I cannot hand you the command for has been left out on purpose.
 """
 
 from __future__ import annotations
