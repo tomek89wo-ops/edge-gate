@@ -51,9 +51,12 @@ Two rules that are not functions, because code cannot enforce them:
     have found noise with a story attached.
 
 A NOTE ON WHAT THIS IS NOT. This does not find edges. It kills them. In one
-research campaign it took roughly 620 candidate hypotheses and passed one.
-That ratio is the point: the expensive mistake in systematic trading is not
-missing an edge, it is deploying capital on one that was never there.
+research campaign it took roughly 620 candidate hypotheses and passed one -
+and that one was later withdrawn from the account, because a further test
+showed its return was market beta carrying no significant alpha. Tested 620,
+deployed none. That ratio is the point: the expensive mistake in systematic
+trading is not missing an edge, it is deploying capital on one that was
+never there. The gate is worth most when it is turned on its own output.
 """
 
 from __future__ import annotations

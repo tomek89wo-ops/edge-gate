@@ -3,9 +3,12 @@
 **Five tests every candidate trading edge has to survive before anyone writes code.**
 
 This does not find edges. It kills them. Over one research campaign it took
-roughly **620 candidate hypotheses and passed one** — and that ratio is the
-point. The expensive mistake in systematic trading is not missing an edge; it
-is putting capital behind one that was never there.
+roughly **620 candidate hypotheses and passed one** — and that one was later
+withdrawn from the account, because a further test showed its return was
+market beta with no significant alpha. So the honest score is 620 tested,
+zero deployed. That ratio is the point: the expensive mistake in systematic
+trading is not missing an edge, it is putting capital behind one that was
+never there.
 
 ```
 python examples/demo.py
