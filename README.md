@@ -67,9 +67,21 @@ share (h−1)/h of their window. Resampling single points treats them as
 independent and understates p by an order of magnitude.
 
 **How bad is it?** Sweeping 60 seeds of *pure noise* through the demo's
-construction, the artefact — significant at block=1, not significant at
-block=20 — appears in **29 of 60 runs**. Roughly half of pure-noise experiments
-look like a discovery if you bootstrap overlapping windows one point at a time.
+construction — two independent white-noise series, no relationship whatsoever —
+**41 of 60 runs come out significant** at p < 0.05 when you bootstrap single
+points. Block correctly at the horizon and **29 of those 60 dissolve**. Two
+thirds of pure noise looks like a discovery under the naive reading, and
+roughly half of everything you would have promoted was the resampling scheme
+talking, not the data.
+
+Do not take that on my word — it is the one number this whole repository rests
+on, so it ships as a script rather than a sentence:
+
+```
+python examples/noise_sweep.py
+```
+
+It prints every seed, both p-values, and the count.
 
 Set `block = horizon`. Always.
 

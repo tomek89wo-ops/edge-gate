@@ -32,10 +32,11 @@ def overlapping_windows():
     resampling overlapping observations as if they were independent.
 
     The seed is fixed at 4 so the demo is reproducible, but this is NOT a
-    cherry-picked freak: sweeping seeds 0-59 with identical construction, the
-    artefact (p < 0.05 at block=1, p > 0.15 at block=20) appears in 29 of 60
-    runs. Roughly half of pure-noise experiments look like a discovery if you
-    bootstrap overlapping windows one point at a time.
+    cherry-picked freak: sweeping seeds 0-59 with identical construction, 41
+    of 60 runs are significant at block=1, and the artefact (p < 0.05 at
+    block=1, p > 0.15 at block=20) appears in 29 of 60. Run it yourself with
+    `python examples/noise_sweep.py` - the claim ships as a script, not as
+    this sentence.
     """
     rng = np.random.default_rng(4)
     sig = pd.Series(rng.normal(size=len(DAYS))).rolling(60).mean().bfill()
