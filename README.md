@@ -1,5 +1,7 @@
 # edge-gate
 
+[![tests](https://github.com/tomek89wo-ops/edge-gate/actions/workflows/tests.yml/badge.svg)](https://github.com/tomek89wo-ops/edge-gate/actions/workflows/tests.yml)
+
 **Five tests every candidate trading edge has to survive before anyone writes code.**
 
 This does not find edges. It kills them. In **60 runs of pure noise** — two
